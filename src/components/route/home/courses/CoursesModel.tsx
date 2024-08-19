@@ -7,9 +7,10 @@ type Direction = "left" | "right" | "top" | "bottom" | "center";
 interface props {
   img: string;
   color: string;
+  title: string;
 }
 
-export default function CoursesModel({ img, color }: props) {
+export default function CoursesModel({ img, color, title }: props) {
   const [hoverDirection, setHoverDirection] = useState<Direction>("center");
   const [isHovered, setIsHovered] = useState(false);
 
@@ -45,10 +46,10 @@ export default function CoursesModel({ img, color }: props) {
 
   // Variants for the animation
   const slideVariants: Variants = {
-    left: { x: "-100%", opacity: 0 },
-    right: { x: "100%", opacity: 0 },
-    top: { y: "-100%", opacity: 0 },
-    bottom: { y: "100%", opacity: 0 },
+    left: { x: "-100%" },
+    right: { x: "100%" },
+    top: { y: "-100%" },
+    bottom: { y: "100%" },
     center: { scale: 0, opacity: 0 },
     visible: { x: 0, y: 0, scale: 1, opacity: 1 },
   };
@@ -97,7 +98,7 @@ export default function CoursesModel({ img, color }: props) {
         }
         `}
         >
-          Introduction to computer science
+          {title}
         </div>
       </div>
       <div className="p-4">

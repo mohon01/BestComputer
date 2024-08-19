@@ -14,12 +14,36 @@ export default function Courses() {
         Courses Starting Soon
       </p>
       <div className=" items-center justify-center  gap-16 grid grid-cols-3">
-        <CoursesModel img={img1} color="blue" />
-        <CoursesModel img={img2} color="green" />
-        <CoursesModel img={img3} color="yellow" />
-        <CoursesModel img={img4} color="green" />
-        <CoursesModel img={img5} color="yellow" />
-        <CoursesModel img={img6} color="blue" />
+        <CoursesModel
+          img={img1}
+          color="blue"
+          title="Principles of Written English Part 2"
+        />
+        <CoursesModel
+          img={img2}
+          color="green"
+          title="Entrepreneurship 101: Who is your customer?"
+        />
+        <CoursesModel
+          img={img3}
+          color="yellow"
+          title="Evaluating Social Programs"
+        />
+        <CoursesModel
+          img={img4}
+          color="green"
+          title="Principles of Written English Part 1"
+        />
+        <CoursesModel
+          img={img5}
+          color="yellow"
+          title="Introduction to Biomedical Imaging"
+        />
+        <CoursesModel
+          img={img6}
+          color="blue"
+          title="Introduction to Computer Science"
+        />
       </div>
     </div>
   );
