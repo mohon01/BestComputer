@@ -8,9 +8,17 @@ interface props {
   img: string;
   color: string;
   title: string;
+  price: string;
+  month?: boolean;
 }
 
-export default function CoursesModel({ img, color, title }: props) {
+export default function CoursesModel({
+  img,
+  color,
+  title,
+  price,
+  month,
+}: props) {
   const [hoverDirection, setHoverDirection] = useState<Direction>("center");
   const [isHovered, setIsHovered] = useState(false);
 
@@ -103,7 +111,7 @@ export default function CoursesModel({ img, color, title }: props) {
       </div>
       <div className="p-4">
         <p
-          className={`text-2xl  ${
+          className={`text-xl  ${
             color === "green"
               ? "text-primary-100"
               : color === "blue"
@@ -115,7 +123,17 @@ export default function CoursesModel({ img, color, title }: props) {
         >
           Medicine
         </p>
-        <p className="text-3xl text-end">Free</p>
+        {month ? (
+          <div className="text-end space-x-3">
+            <span className="text-3xl font-thin">{price}</span>
+            <span className="text-gray-400">/</span>
+            <span className="text-gray-400">{month ? "Monthly" : null}</span>
+          </div>
+        ) : (
+          <div className="text-end space-x-3">
+            <span className="text-3xl font-thin">{price}</span>
+          </div>
+        )}
       </div>
     </div>
   );

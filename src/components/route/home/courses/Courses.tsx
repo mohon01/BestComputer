@@ -18,31 +18,40 @@ export default function Courses() {
           img={img1}
           color="blue"
           title="Principles of Written English Part 2"
+          price="$85"
+          month
         />
         <CoursesModel
           img={img2}
           color="green"
           title="Entrepreneurship 101: Who is your customer?"
+          price="$195"
+          month
         />
         <CoursesModel
           img={img3}
           color="yellow"
           title="Evaluating Social Programs"
+          price="Free"
         />
         <CoursesModel
           img={img4}
           color="green"
           title="Principles of Written English Part 1"
+          price="$85"
         />
         <CoursesModel
           img={img5}
           color="yellow"
           title="Introduction to Biomedical Imaging"
+          price="$400"
         />
         <CoursesModel
           img={img6}
           color="blue"
           title="Introduction to Computer Science"
+          price="$120"
+          month
         />
       </div>
     </div>
