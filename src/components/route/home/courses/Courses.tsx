@@ -20,6 +20,7 @@ export default function Courses() {
           title="Principles of Written English Part 2"
           price="$85"
           month
+          category="Language"
         />
         <CoursesModel
           img={img2}
@@ -27,24 +28,28 @@ export default function Courses() {
           title="Entrepreneurship 101: Who is your customer?"
           price="$195"
           month
+          category="Marketing"
         />
         <CoursesModel
           img={img3}
           color="yellow"
           title="Evaluating Social Programs"
           price="Free"
+          category="Social"
         />
         <CoursesModel
           img={img4}
           color="green"
           title="Principles of Written English Part 1"
           price="$85"
+          category="Language"
         />
         <CoursesModel
           img={img5}
           color="yellow"
           title="Introduction to Biomedical Imaging"
           price="$400"
+          category="Medicine"
         />
         <CoursesModel
           img={img6}
@@ -52,6 +57,7 @@ export default function Courses() {
           title="Introduction to Computer Science"
           price="$120"
           month
+          category="Computer"
         />
       </div>
     </div>

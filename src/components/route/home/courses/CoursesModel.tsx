@@ -10,6 +10,7 @@ interface props {
   title: string;
   price: string;
   month?: boolean;
+  category: string;
 }
 
 export default function CoursesModel({
@@ -18,6 +19,7 @@ export default function CoursesModel({
   title,
   price,
   month,
+  category,
 }: props) {
   const [hoverDirection, setHoverDirection] = useState<Direction>("center");
   const [isHovered, setIsHovered] = useState(false);
@@ -121,7 +123,7 @@ export default function CoursesModel({
               : ""
           }`}
         >
-          Medicine
+          {category}
         </p>
         {month ? (
           <div className="text-end space-x-3">
