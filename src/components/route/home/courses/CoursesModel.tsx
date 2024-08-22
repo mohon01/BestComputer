@@ -72,7 +72,7 @@ export default function CoursesModel({
     >
       {/* Hover content with direction-based animation */}
       <motion.div
-        className={`absolute z-20 inset-0 flex justify-center items-center text-white ${
+        className={`absolute z-20 inset-0  ${
           color === "green"
             ? "bg-primary-100"
             : color === "blue"
@@ -87,7 +87,19 @@ export default function CoursesModel({
         animate={isHovered ? "visible" : hoverDirection} // Animate to visible state or exit based on hover state
         transition={{ duration: 0.4, ease: "easeInOut" }}
       >
-        hello
+        <div className="py-6 px-4">
+          <div className="text-white space-y-4">
+            <div className="text-2xl">{title}</div>
+            <div className="text-thin text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              deleniti?
+            </div>
+          </div>
+          <div>
+            <button>d</button>
+            <button>s</button>
+          </div>
+        </div>
       </motion.div>
       <div className="relative">
         <img
@@ -96,7 +108,7 @@ export default function CoursesModel({
           className="object-cover w-full h-full"
         />
         <div
-          className={`absolute bottom-0 w-full p-4 text-2xl bg-primary-100 text-white
+          className={`absolute bottom-0 w-full p-4 text-2xl text-white
         ${
           color === "green"
             ? "bg-primary-100"
