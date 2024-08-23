@@ -5,7 +5,17 @@ module.exports = {
     `./src/components/**/*.{js,jsx,ts,tsx}`,
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto", "sans-serif"],
+        loveYa: ['"Love Ya Like A Sister"', "cursive"],
+      },
+      colors: {
+        primary: {
+          100: "#1dbb90",
+        },
+      },
+    },
   },
   plugins: [],
-}
+};
