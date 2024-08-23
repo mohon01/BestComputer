@@ -87,7 +87,7 @@ export default function CoursesModel({
         animate={isHovered ? "visible" : hoverDirection} // Animate to visible state or exit based on hover state
         transition={{ duration: 0.4, ease: "easeInOut" }}
       >
-        <div className="py-6 px-4">
+        <div className="py-6 px-4 flex h-full items-center justify-between flex-col">
           <div className="text-white space-y-4">
             <div className="text-2xl">{title}</div>
             <div className="text-thin text-sm">
@@ -96,8 +96,8 @@ export default function CoursesModel({
             </div>
           </div>
           <div>
-            <button>d</button>
-            <button>s</button>
+            <button>Learn More</button>
+            <button>Buy Now</button>
           </div>
         </div>
       </motion.div>
