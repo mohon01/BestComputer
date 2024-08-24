@@ -1,4 +1,5 @@
 import React from "react";
+import { LuGraduationCap } from "react-icons/lu";
 import img1 from "../../../../images/course1.jpg";
 import img2 from "../../../../images/course2.jpg";
 import img3 from "../../../../images/course3.jpg";
@@ -59,6 +60,14 @@ export default function Courses() {
           month
           category="Computer"
         />
+      </div>
+      <div className="flex items-center justify-center pt-6">
+        <button className="uppercase bg-primary-100 text-white flex items-center gap-2 px-6 py-2 rounded-md font-bold">
+          <span>
+            <LuGraduationCap />
+          </span>
+          <span>View all courses</span>
+        </button>
       </div>
     </div>
   );
