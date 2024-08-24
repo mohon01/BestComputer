@@ -4,6 +4,7 @@ import Courses from "../components/route/home/courses/Courses";
 import { Slider } from "../components/route/home/hero/Slider";
 import Menu from "../components/route/home/menu/Menu";
 import Partner from "../components/route/home/partner/Partner";
+import Video from "../components/route/home/video/Video";
 
 const IndexPage = () => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = () => {
       <Menu />
       <Courses />
       <Partner />
+      <Video />
     </main>
   );
 };
