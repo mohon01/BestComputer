@@ -6,6 +6,7 @@ import { Slider } from "../components/route/home/hero/Slider";
 import Menu from "../components/route/home/menu/Menu";
 import Partner from "../components/route/home/partner/Partner";
 import Price from "../components/route/home/price/Price";
+import Testimonials from "../components/route/home/testimonials/Testimonials";
 import Video from "../components/route/home/video/Video";
 
 const IndexPage = () => {
@@ -19,6 +20,7 @@ const IndexPage = () => {
       <Video />
       <Price />
       <Extra />
+      <Testimonials />
     </main>
   );
 };
