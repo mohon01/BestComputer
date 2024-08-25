@@ -1,5 +1,6 @@
 import * as React from "react";
 import Header from "../components/common/Headers/Header";
+import Footer from "../components/common/footer/Footer";
 import Courses from "../components/route/home/courses/Courses";
 import Extra from "../components/route/home/extra/Extra";
 import { Slider } from "../components/route/home/hero/Slider";
@@ -21,6 +22,7 @@ const IndexPage = () => {
       <Price />
       <Extra />
       <Testimonials />
+      <Footer />
     </main>
   );
 };
