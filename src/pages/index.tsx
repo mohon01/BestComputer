@@ -1,5 +1,6 @@
 import * as React from "react";
 import Header from "../components/common/Headers/Header";
+import StickyHeader from "../components/common/Headers/StickyHeader";
 import Footer from "../components/common/footer/Footer";
 import Courses from "../components/route/home/courses/Courses";
 import Extra from "../components/route/home/extra/Extra";
@@ -13,6 +14,7 @@ import Video from "../components/route/home/video/Video";
 const IndexPage = () => {
   return (
     <main>
+      <StickyHeader />
       <Header />
       <Slider />
       <Menu />
