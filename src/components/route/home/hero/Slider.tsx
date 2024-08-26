@@ -79,7 +79,6 @@ export const Slider: React.FC = () => {
           }}
           drag="x"
           dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={1}
           onDragEnd={(_e, { offset, velocity }) => {
             const swipe = swipePower(offset.x, velocity.x);
             if (swipe < -swipeConfidenceThreshold) {
@@ -97,7 +96,11 @@ export const Slider: React.FC = () => {
             animate={selectedVariant.animate}
             transition={selectedVariant.transition}
             style={{
-              backgroundImage: `url(${green})`,
+              backgroundImage: `url(${
+                imageIndex === images.length - 1
+                  ? images[imageIndex - 1]
+                  : images[(imageIndex - 1 + images.length) % images.length]
+              })`,
               backgroundPosition: "center",
               backgroundRepeat: "repeat",
               zIndex: 1,
