@@ -118,7 +118,7 @@ export const Slider: React.FC = () => {
           ></div>
 
           {/* Content Over the Image */}
-          <div className="absolute left-1/2 top-48 z-10 mx-auto grid h-full w-full max-w-6xl -translate-x-1/2 grid-cols-2 justify-center text-white">
+          <div className="absolute left-1/2 top-24 md:top-48 z-10 mx-auto grid h-full w-full max-w-6xl -translate-x-1/2 px-2 md:grid-cols-2 justify-center text-white">
             <div
               style={{
                 perspective: 1000,
@@ -133,12 +133,12 @@ export const Slider: React.FC = () => {
                 alt=""
               />
             </div>
-            <div className="flex h-[20rem] flex-col justify-between">
+            <div className="flex h-[20rem] flex-col gap-3 md:justify-between">
               <motion.h1
                 initial={selectedContentVariant.title.initial}
                 animate={selectedContentVariant.title.animate}
                 transition={selectedContentVariant.title.transition}
-                className="font-loveYa text-5xl font-bold"
+                className="font-loveYa text-2xl md:text-5xl font-bold"
               >
                 {contentData[imageIndex].title}
               </motion.h1>
@@ -146,7 +146,7 @@ export const Slider: React.FC = () => {
                 initial={selectedContentVariant.description.initial}
                 animate={selectedContentVariant.description.animate}
                 transition={selectedContentVariant.description.transition}
-                className="text-lg"
+                className="md:text-lg text-sm"
               >
                 {contentData[imageIndex].description}
               </motion.p>
@@ -154,7 +154,7 @@ export const Slider: React.FC = () => {
                 initial={selectedContentVariant.button.initial}
                 animate={selectedContentVariant.button.animate}
                 transition={selectedContentVariant.button.transition}
-                className="w-fit rounded bg-slate-100 px-6 py-3 text-lg font-bold text-primary-100 shadow-lg"
+                className="w-fit rounded bg-slate-100 px-3 md:px-6 py-2 md:py-3 md:text-lg font-bold text-primary-100 shadow-lg"
               >
                 Start Learning Now
               </motion.button>

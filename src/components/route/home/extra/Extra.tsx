@@ -10,7 +10,7 @@ type Value = ValuePiece | [ValuePiece, ValuePiece];
 export default function Extra() {
   const [value, onChange] = useState<Value>(new Date());
   return (
-    <div className="max-w-5xl py-10 mx-auto gap-10 grid grid-cols-3  justify-center">
+    <div className="max-w-5xl py-10 mx-auto gap-10 grid px-2 md:grid-cols-3  justify-center">
       <div className="space-y-5">
         <p className="text-3xl">Calender</p>
         <Calendar onChange={onChange} value={value} />

@@ -109,7 +109,7 @@ export default function CoursesModel({
         <img
           src={img}
           alt="Course Image"
-          className="object-cover w-full h-60 "
+          className="object-cover w-full  md:h-60 "
         />
         <div
           className={`absolute bottom-0 w-full p-4 text-2xl text-white

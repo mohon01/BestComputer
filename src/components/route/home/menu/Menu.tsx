@@ -6,7 +6,7 @@ import { GrUserFemale } from "react-icons/gr";
 export default function Menu() {
   return (
     <div className="relative py-16">
-      <div className="grid grid-cols-3 items-center justify-between mx-40 gap-16">
+      <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-between md:mx-40 gap-4 md:gap-16">
         <div className="flex flex-col items-center gap-8 text-primary-100">
           <div>
             <GrUserFemale size={60} />
@@ -23,7 +23,7 @@ export default function Menu() {
             Build cool projects to showcase your skills
           </p>
         </div>
-        <div className="flex flex-col items-center gap-8 text-primary-100">
+        <div className="flex flex-col col-span-2 md:col-span-1 items-center gap-8 text-primary-100">
           <div>
             <FiGlobe size={60} />
           </div>

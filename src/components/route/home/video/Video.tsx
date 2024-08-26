@@ -5,10 +5,10 @@ import img2 from "../../../../images/thumb.jpg";
 
 export default function Video() {
   return (
-    <div className="border-t grid grid-cols-2 py-10 gap-20 max-w-5xl mx-auto">
+    <div className="border-t grid grid-cols-1 md:grid-cols-2 px-2 py-10 gap-20 max-w-5xl mx-auto">
       <div>
         <CiVideoOn size={50} className="text-primary-100" />
-        <p className="text-4xl py-3">
+        <p className="text-2xl md:text-4xl py-3">
           Our Video Training for Microsoft products and technologies
         </p>
         <p className="text-gray-500 py-3">
@@ -20,12 +20,16 @@ export default function Video() {
           browse courses
         </button>
       </div>
-      <div className="relative flex items-center justify-end">
-        <img src={img1} alt="" className="h-80 relative overflow-hidden" />
+      <div className="relative flex items-center justify-center md:justify-end">
+        <img
+          src={img1}
+          alt=""
+          className="h-60 md:h-80 relative overflow-hidden"
+        />
         <img
           src={img2}
           alt=""
-          className="absolute top-7 left-[4.6rem] rounded-lg scale-95  "
+          className="absolute md:top-7 -top-1 left-4 md:left-[4.6rem] rounded-lg scale-[0.8] md:scale-95  "
         />
       </div>
     </div>

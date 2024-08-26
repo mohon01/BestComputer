@@ -4,8 +4,8 @@ import { FiClock } from "react-icons/fi";
 export default function Price() {
   return (
     <div className="flex relative items-center justify-center flex-col space-y-10 bg-slate-200 py-16 my-10">
-      <div className="text-5xl">Plans & Pricing</div>
-      <div className="grid grid-cols-3 gap-16">
+      <div className="text-3xl md:text-5xl">Plans & Pricing</div>
+      <div className="grid md:grid-cols-3 gap-16">
         <div className=" rounded-lg overflow-clip w-[17rem]">
           <div className="bg-[#1b99b9] h-16 text-3xl flex items-center justify-center py-8 text-white">
             Trail

@@ -7,7 +7,7 @@ import img5 from "../../../../images/partner/partners_05_bw.jpg";
 
 export default function Partner() {
   return (
-    <div className="flex items-center justify-center flex-col text-center py-10">
+    <div className="flex items-center px-2 justify-center flex-col  text-center py-10">
       <div className=" max-w-2xl space-y-8">
         <h1 className="text-4xl font-thin">Learn From the Best</h1>
         <div className="space-y-3 text-gray-500">
@@ -21,7 +21,7 @@ export default function Partner() {
           </p>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-20 mt-10">
+      <div className="grid grid-cols-3 items-baseline justify-center gap-6 lg:grid-cols-5  md:gap-20 mt-10">
         <img src={img1} alt="" />
         <img src={img2} alt="" />
         <img src={img3} alt="" />
