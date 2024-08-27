@@ -13,12 +13,11 @@ const Navigation: React.FC = () => {
   const navRef = useRef<HTMLUListElement>(null);
 
   const navItems: NavItem[] = [
-    { id: 1, label: "HomePage", path: "/" },
-    { id: 2, label: "Features", path: "/blog" },
-    { id: 3, label: "Courses", path: "/gallery" },
-    { id: 4, label: "Teachers", path: "/about" },
-    { id: 5, label: "Blog", path: "/contact" },
-    { id: 6, label: "Shop", path: "/shop" },
+    { id: 1, label: "হোমপেজ", path: "/" },
+    { id: 2, label: "নোটিশ", path: "/blog" },
+    { id: 3, label: "কোর্স সমূহ", path: "/gallery" },
+    { id: 4, label: "আবেদন করুন", path: "/about" },
+    { id: 5, label: "আমাদের সম্পর্কে", path: "/contact" },
   ];
 
   const getBackgroundStyles = () => {

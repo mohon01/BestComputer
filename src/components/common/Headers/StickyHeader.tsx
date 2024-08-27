@@ -31,7 +31,7 @@ export default function StickyHeader() {
     >
       <div className="flex items-center max-w-5xl mx-auto justify-between">
         <div className="font-loveYa text-3xl font-bold text-white">
-          Education Center
+          বেস্ট কম্পিউটার ট্রেনিং সেন্টার
         </div>
         <div className="flex items-center gap-2">
           <Navigation />
