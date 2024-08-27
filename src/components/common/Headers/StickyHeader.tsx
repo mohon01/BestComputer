@@ -33,7 +33,7 @@ export default function StickyHeader() {
         <div className="font-loveYa text-3xl font-bold text-white">
           বেস্ট কম্পিউটার ট্রেনিং সেন্টার
         </div>
-        <div className="flex items-center gap-2">
+        <div className="md:flex items-center hidden gap-2">
           <Navigation />
           <FiSearch color="white" size={28} />
         </div>
