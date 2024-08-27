@@ -8,7 +8,7 @@ public_folder: /images
 collections:
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
+    folder: "content/notice"
     create: true
     slug: "index"
     media_folder: ""
