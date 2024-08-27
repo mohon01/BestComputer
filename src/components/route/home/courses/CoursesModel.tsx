@@ -127,7 +127,7 @@ export default function CoursesModel({
           {title}
         </div>
       </div>
-      <div className="p-4">
+      {/* <div className="p-4">
         <p
           className={`text-xl  ${
             color === "green"
@@ -152,7 +152,7 @@ export default function CoursesModel({
             <span className="text-3xl font-thin">{price}</span>
           </div>
         )}
-      </div>
+      </div> */}
     </div>
   );
 }
