@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <div className="absolute left-1/2 px-2 top-0 z-50 w-full max-w-5xl -translate-x-1/2 transform space-y-4 py-2">
+    <div className="absolute px-2 top-0 z-50 w-full md:px-20  space-y-4 py-2">
       <div className="text-xs font-thin flex item-center justify-center md:justify-start text-gray-200">
         Contact us on +930443093409
       </div>

@@ -7,7 +7,7 @@ import Navigation from "./Navigation";
 export default function MainHeader() {
   return (
     <div
-      className=" border-dashed border-b-2 px-2 py-2"
+      className=" z-50 border-dashed border-b-2 px-2 py-2"
       style={{
         backgroundImage: `url(${img})`,
         backgroundRepeat: "repeat",

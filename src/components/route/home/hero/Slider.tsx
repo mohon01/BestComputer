@@ -63,7 +63,7 @@ export const Slider: React.FC = () => {
   const selectedContentVariant = contentVariants[imageIndex];
 
   return (
-    <div className="relative h-[39rem] w-full overflow-hidden">
+    <div className="relative h-[39rem] -z-10 w-full overflow-hidden">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={page}

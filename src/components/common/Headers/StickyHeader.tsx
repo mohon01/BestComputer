@@ -27,13 +27,12 @@ export default function StickyHeader() {
 
   return (
     <div
-      className={` border-dashed border-b-2 px-2 py-2  left-1/2 bg-[#018763] top-0 z-50 w-full  -translate-x-1/2 transform space-y-4  ${
+      className={`fixed border-dashed border-b-2 px-2 py-2 z-50 left-1/2 duration-300 transition-all  top-50 w-full  -translate-x-1/2 transform space-y-4  ${
         visible ? "translate-y-0" : "-translate-y-24"
-      } fixed left-0 top-0 items-center px-2 transition-transform duration-500 ease-in-out lg:px-7`}
+      }`}
       style={{
         backgroundImage: `url(${img})`,
         backgroundRepeat: "repeat",
-        zIndex: 0,
       }}
     >
       <div className="max-w-5xl mx-auto">

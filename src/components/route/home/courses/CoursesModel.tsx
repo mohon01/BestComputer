@@ -8,49 +8,31 @@ interface props {
   img: string;
   color: string;
   title: string;
-  price: string;
-  month?: boolean;
-  category: string;
 }
 
-export default function CoursesModel({
-  img,
-  color,
-  title,
-  price,
-  month,
-  category,
-}: props) {
+export default function CoursesModel({ img, color, title }: props) {
   const [hoverDirection, setHoverDirection] = useState<Direction>("center");
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
-    setIsHovered(true);
-
-    const { left, top, width, height } =
-      e.currentTarget.getBoundingClientRect();
+  const determineHoverDirection = (e: React.MouseEvent<HTMLDivElement>) => {
+    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
     const x = e.clientX - left;
     const y = e.clientY - top;
 
-    if (x < width / 3) setHoverDirection("left");
-    else if (x > (width * 2) / 3) setHoverDirection("right");
-    else if (y < height / 3) setHoverDirection("top");
-    else if (y > (height * 2) / 3) setHoverDirection("bottom");
-    else setHoverDirection("center");
+    if (x < width / 3) return "left";
+    if (x > (width * 2) / 3) return "right";
+    if (y < height / 3) return "top";
+    if (y > (height * 2) / 3) return "bottom";
+    return "center";
+  };
+
+  const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
+    setIsHovered(true);
+    setHoverDirection(determineHoverDirection(e));
   };
 
   const handleMouseLeave = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { left, top, width, height } =
-      e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - left;
-    const y = e.clientY - top;
-
-    if (x < width / 3) setHoverDirection("left");
-    else if (x > (width * 2) / 3) setHoverDirection("right");
-    else if (y < height / 3) setHoverDirection("top");
-    else if (y > (height * 2) / 3) setHoverDirection("bottom");
-    else setHoverDirection("center");
-
+    setHoverDirection(determineHoverDirection(e));
     setIsHovered(false); // Trigger exit animation
   };
 
@@ -66,13 +48,13 @@ export default function CoursesModel({
 
   return (
     <div
-      className="border bg-slate-100 rounded-lg group overflow-hidden relative"
+      className="border z-0 rounded-lg group overflow-hidden relative"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {/* Hover content with direction-based animation */}
       <motion.div
-        className={`absolute z-20 inset-0  ${
+        className={`absolute z-10 inset-0  ${
           color === "green"
             ? "bg-primary-100"
             : color === "blue"
@@ -109,7 +91,7 @@ export default function CoursesModel({
         <img
           src={img}
           alt="Course Image"
-          className="object-cover w-full  md:h-60 "
+          className="object-cover w-full "
         />
         <div
           className={`absolute bottom-0 w-full p-4 text-2xl text-white
@@ -127,32 +109,6 @@ export default function CoursesModel({
           {title}
         </div>
       </div>
-      {/* <div className="p-4">
-        <p
-          className={`text-xl  ${
-            color === "green"
-              ? "text-primary-100"
-              : color === "blue"
-              ? "text-primary-200"
-              : color === "yellow"
-              ? "text-primary-300"
-              : ""
-          }`}
-        >
-          {category}
-        </p>
-        {month ? (
-          <div className="text-end space-x-3">
-            <span className="text-3xl font-thin">{price}</span>
-            <span className="text-gray-400">/</span>
-            <span className="text-gray-400">{month ? "Monthly" : null}</span>
-          </div>
-        ) : (
-          <div className="text-end space-x-3">
-            <span className="text-3xl font-thin">{price}</span>
-          </div>
-        )}
-      </div> */}
     </div>
   );
 }

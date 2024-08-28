@@ -1,9 +1,10 @@
+import React from "react";
 import { FiSearch } from "react-icons/fi";
 import Navigation from "./Navigation";
 
 export default function Navbar() {
   return (
-    <div className="absolute left-1/2 top-0 z-50 w-full max-w-5xl -translate-x-1/2 transform space-y-4 py-2">
+    <div className="absolute z-0 left-1/2 top-0 w-full max-w-5xl -translate-x-1/2 transform space-y-4 py-2">
       <div className="text-xs font-thin text-gray-200">
         Contact us on +930443093409
       </div>
