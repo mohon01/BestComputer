@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
         loveYa: ['"Love Ya Like A Sister"', "cursive"],
         noto: ["Noto Sans Bengali"],
       },

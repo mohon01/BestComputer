@@ -1,0 +1,125 @@
+import React from "react";
+// Import Swiper React components
+import { FreeMode, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import {
+  FaRegClipboard,
+  FaRegHandshake,
+  FaRegKeyboard,
+  FaRegLightbulb,
+  FaRegUser,
+} from "react-icons/fa";
+import { FiClock, FiDollarSign } from "react-icons/fi";
+import { GoVerified } from "react-icons/go";
+import { GrDocument } from "react-icons/gr";
+import { IoCloudyNightOutline } from "react-icons/io5";
+import { LuGraduationCap } from "react-icons/lu";
+import { RiComputerLine } from "react-icons/ri";
+import "swiper/css";
+import "swiper/css/pagination";
+import WhyUsModel from "./WhyUsModel";
+
+export default function WhyUs() {
+  return (
+    <div className="my-10 space-y-10 px-2 md:px-20">
+      <div className="flex flex-col items-center justify-center gap-4 text-center">
+        <p className="text-2xl font-bold text-primary-100 md:text-5xl">
+          আমাদের প্রতিষ্ঠানে কেন
+        </p>
+        <p className="text-gray-600">
+          অন্য প্রতিষ্ঠান থেকে আমরা কেন আলাদা? আমাদের প্রতিষ্ঠানকে কেন বেছে
+          নিবেন?
+        </p>
+      </div>
+      <Swiper
+        loop={true}
+        slidesPerView={1}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+        }}
+        spaceBetween={10}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination, FreeMode]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <WhyUsModel
+            text="ন্যূনতম কোর্স ফিতে সর্বোৎকৃষ্ট মানের প্রশিক্ষণ"
+            icon={FiDollarSign}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="আধুনিক ও সুসজ্জিত মাল্টিমিডিয়া কম্পিউটার ল্যাব"
+            icon={RiComputerLine}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel text="এককভাবে প্রশিক্ষণ দেওয়া হয়" icon={FaRegUser} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="সিলেবাস অনুযায়ী যত্ন সহকারে পাঠদানের ব্যবস্থা"
+            icon={FaRegClipboard}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel text="মানসম্মত আধুনিক সিটের ব্যবস্থা" icon={GrDocument} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="সুবিধা অনুযায়ী ক্লাসের সময় নির্ধারণ"
+            icon={FiClock}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="চাকুরীজীবীদের জন্য রাত্রিকালীন ক্লাস"
+            icon={IoCloudyNightOutline}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="পর্যাপ্ত সময় অনুশীলন করার ব্যবস্থা"
+            icon={FaRegKeyboard}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="পেশাগত কাজের উপর প্রশিক্ষণ দেওয়া হয়"
+            icon={FaRegLightbulb}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="অভিজ্ঞ প্রশিক্ষক মন্ডলি দ্বারা পরিচালিত"
+            icon={LuGraduationCap}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="প্রশিক্ষণ পরবর্তী যে কোন সমস্যা সুষ্ঠু পরামর্শ প্রদান"
+            icon={FaRegHandshake}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <WhyUsModel
+            text="পরীক্ষার মাধ্যমে সরকারি সার্টিফিকেট এর ব্যবস্থা"
+            icon={GoVerified}
+          />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+}

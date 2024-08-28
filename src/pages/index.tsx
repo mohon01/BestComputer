@@ -5,6 +5,7 @@ import Footer from "../components/common/footer/Footer";
 import Courses from "../components/route/home/courses/Courses";
 import { Slider } from "../components/route/home/hero/Slider";
 import Services from "../components/route/home/services/Services";
+import WhyUs from "../components/route/home/whyus/WhyUs";
 
 const IndexPage = () => {
   return (
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <Slider />
       <Courses />
       <Services />
+      <WhyUs />
       <Footer />
     </main>
   );

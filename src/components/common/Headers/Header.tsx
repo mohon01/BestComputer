@@ -6,7 +6,7 @@ import Navigation from "./Navigation";
 export default function Header() {
   return (
     <div className="absolute top-0 z-50 w-full space-y-4 px-2 py-2 md:px-20">
-      <div className="item-center flex justify-center text-xs font-thin text-gray-200 md:justify-start">
+      <div className="item-center flex justify-center text-xs text-gray-200 md:justify-start">
         Contact us on +930443093409
       </div>
       <div className="flex items-center justify-between">
