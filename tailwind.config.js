@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         loveYa: ['"Love Ya Like A Sister"', "cursive"],
+        noto: ["Noto Sans Bengali"],
       },
       colors: {
         primary: {
@@ -16,6 +17,9 @@ module.exports = {
           200: "#1eaace",
           300: "#ffb20e",
         },
+      },
+      boxShadow: {
+        custom: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
       },
     },
   },
