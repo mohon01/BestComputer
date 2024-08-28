@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCrown, FaUserCheck, FaUserGraduate } from "react-icons/fa";
+import { FaUserCheck } from "react-icons/fa";
 import { FaSheetPlastic, FaUsers } from "react-icons/fa6";
 import InsightsModel from "./InsightsModel";
 
@@ -16,20 +16,15 @@ export default function Insights() {
           সার্টিফিকেট প্রদান করা হয়
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-10 md:grid-cols-5 md:gap-20">
+      <div className="grid grid-cols-2 gap-10 md:grid-cols-3 md:gap-20">
         <InsightsModel number={2230} label="মোট শিক্ষার্থী" icon={FaUsers} />
         <InsightsModel
           number={120}
           label="বর্তমান শিক্ষার্থী"
           icon={FaUserCheck}
         />
-        <InsightsModel
-          number={120}
-          label="সফল শিক্ষার্থী"
-          icon={FaUserGraduate}
-        />
-        <InsightsModel number={2230} label="মোট কোর্স" icon={FaSheetPlastic} />
-        <InsightsModel number={2230} label="সফলতার বছর" icon={FaCrown} />
+
+        <InsightsModel number={8} label="মোট কোর্স" icon={FaSheetPlastic} />
       </div>
     </div>
   );
