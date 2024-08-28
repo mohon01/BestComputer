@@ -15,7 +15,8 @@ export default function CoursesModel({ img, color, title }: props) {
   const [isHovered, setIsHovered] = useState(false);
 
   const determineHoverDirection = (e: React.MouseEvent<HTMLDivElement>) => {
-    const { left, top, width, height } = e.currentTarget.getBoundingClientRect();
+    const { left, top, width, height } =
+      e.currentTarget.getBoundingClientRect();
     const x = e.clientX - left;
     const y = e.clientY - top;
 
@@ -48,20 +49,20 @@ export default function CoursesModel({ img, color, title }: props) {
 
   return (
     <div
-      className="border z-0 rounded-lg group overflow-hidden relative"
+      className="group relative z-0 overflow-hidden rounded-lg border"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       {/* Hover content with direction-based animation */}
       <motion.div
-        className={`absolute z-10 inset-0  ${
+        className={`absolute inset-0 z-10 ${
           color === "green"
             ? "bg-primary-100"
             : color === "blue"
-            ? "bg-primary-200"
-            : color === "yellow"
-            ? "bg-primary-300"
-            : ""
+              ? "bg-primary-200"
+              : color === "yellow"
+                ? "bg-primary-300"
+                : ""
         }`}
         key={hoverDirection} // Key prop to re-render when hoverDirection changes
         variants={slideVariants}
@@ -69,8 +70,8 @@ export default function CoursesModel({ img, color, title }: props) {
         animate={isHovered ? "visible" : hoverDirection} // Animate to visible state or exit based on hover state
         transition={{ duration: 0.4, ease: "easeInOut" }}
       >
-        <div className="py-10 px-6 flex h-full items-center justify-between flex-col">
-          <div className="text-white space-y-4">
+        <div className="flex h-full flex-col items-center justify-between px-6 py-10">
+          <div className="space-y-4 text-white">
             <div className="text-2xl">{title}</div>
             <div className="text-thin text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
@@ -78,33 +79,27 @@ export default function CoursesModel({ img, color, title }: props) {
             </div>
           </div>
           <div className="flex gap-5">
-            <button className="bg-white hover:bg-primary-300 hover:text-white border transition-all duration-300 shadow-lg px-4 py-2 rounded text-orange-600 font-bold">
+            <button className="rounded border bg-white px-4 py-2 font-bold text-orange-600 shadow-lg transition-all duration-300 hover:bg-primary-300 hover:text-white">
               Learn More
             </button>
-            <button className="bg-white hover:bg-primary-300 hover:text-white border transition-all duration-300 shadow-lg px-4 py-2 rounded text-orange-600 font-bold">
+            <button className="rounded border bg-white px-4 py-2 font-bold text-orange-600 shadow-lg transition-all duration-300 hover:bg-primary-300 hover:text-white">
               Buy Now
             </button>
           </div>
         </div>
       </motion.div>
       <div className="relative">
-        <img
-          src={img}
-          alt="Course Image"
-          className="object-cover w-full "
-        />
+        <img src={img} alt="Course Image" className="w-full object-cover" />
         <div
-          className={`absolute bottom-0 w-full p-4 text-2xl text-white
-        ${
-          color === "green"
-            ? "bg-primary-100"
-            : color === "blue"
-            ? "bg-primary-200"
-            : color === "yellow"
-            ? "bg-primary-300"
-            : ""
-        }
-        `}
+          className={`absolute bottom-0 w-full p-4 text-2xl text-white ${
+            color === "green"
+              ? "bg-primary-100"
+              : color === "blue"
+                ? "bg-primary-200"
+                : color === "yellow"
+                  ? "bg-primary-300"
+                  : ""
+          } `}
         >
           {title}
         </div>

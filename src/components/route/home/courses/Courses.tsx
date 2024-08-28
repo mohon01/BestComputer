@@ -12,9 +12,9 @@ import CoursesModel from "./CoursesModel";
 
 export default function Courses() {
   return (
-    <div className=" py-16 bg-slate-100 space-y-10 px-2 md:px-20">
-      <div className="text-center space-y-4">
-        <p className="text-4xl text-primary-100 font-bold">
+    <div className="space-y-10 bg-slate-100 px-2 py-16 md:px-20">
+      <div className="space-y-4 text-center">
+        <p className="text-4xl font-bold text-primary-100">
           আমাদের লেটেস্ট কোর্স সমূহঃ
         </p>
         <p>
@@ -22,7 +22,7 @@ export default function Courses() {
           ক্যারিয়ার গড়ে তুলুন
         </p>
       </div>
-      <div className=" items-center justify-center  gap-6 grid  md:grid-cols-4">
+      <div className="grid items-center justify-center gap-6 md:grid-cols-4">
         <CoursesModel img={img1} color="blue" title="অফিস অ্যাপলিকেশন" />
         <CoursesModel img={img2} color="green" title="ডাটাবেজ প্রোগ্রামিং" />
         <CoursesModel img={img3} color="blue" title="ডিজিটাল মার্কেটিং" />
@@ -33,7 +33,7 @@ export default function Courses() {
         <CoursesModel img={img8} color="green" title="ইথিক্যাল হ্যাকিং" />
       </div>
       <div className="flex items-center justify-center pt-6">
-        <button className="uppercase bg-primary-100 text-white flex items-center gap-2 px-6 py-2 rounded-md font-bold">
+        <button className="flex items-center gap-2 rounded-md bg-primary-100 px-6 py-2 font-bold uppercase text-white">
           <span>
             <LuGraduationCap />
           </span>
