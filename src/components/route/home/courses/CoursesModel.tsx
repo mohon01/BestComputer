@@ -91,7 +91,7 @@ export default function CoursesModel({ img, color, title }: props) {
       <div className="relative">
         <img src={img} alt="Course Image" className="w-full object-cover" />
         <div
-          className={`absolute bottom-0 w-full p-4 text-2xl text-white ${
+          className={`absolute bottom-0 w-full p-4 text-sm text-white md:text-2xl ${
             color === "green"
               ? "bg-primary-100"
               : color === "blue"
