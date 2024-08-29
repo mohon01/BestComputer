@@ -6,6 +6,7 @@ import Courses from "../components/route/home/courses/Courses";
 import { Slider } from "../components/route/home/hero/Slider";
 import Insights from "../components/route/home/insights/Insights";
 import Members from "../components/route/home/members/Members";
+import Payment from "../components/route/home/payment/Payment";
 import Services from "../components/route/home/services/Services";
 import Student from "../components/route/home/student/Student";
 import WhyUs from "../components/route/home/whyus/WhyUs";
@@ -24,6 +25,7 @@ const IndexPage = () => {
       <Members />
       <Student />
       <WorkPlace />
+      <Payment />
       <Footer />
     </main>
   );

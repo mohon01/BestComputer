@@ -5,16 +5,17 @@ import {
   FaPinterestSquare,
   FaRss,
 } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
+import { MdCall, MdEmail } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <div>
-      <div className="bg-gray-800  px-2">
-        <div className="max-w-3xl flex flex-col gap-8 items-center text-white py-10 mx-auto ">
-          <p className="text-4xl font-loveYa font-bold">Education Center</p>
+    <div className="relative mt-80 md:mt-40">
+      <div className="bg-gray-800 px-2 pt-48 md:pt-20">
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 py-10 text-white">
+          <p className="font-loveYa text-4xl font-bold">Education Center</p>
           <div className="grid grid-cols-2 gap-8">
-            <div className="flex items-end text-sm text-end md:text-lg  flex-col">
+            <div className="flex flex-col items-end text-end text-sm md:text-lg">
               <p>San Francisco, CA 04534 US</p>
               <p>2334 San st</p>
             </div>
@@ -23,7 +24,7 @@ export default function Footer() {
               <p>Fax: 3455543</p>
             </div>
           </div>
-          <div className="md:text-5xl text-xl flex gap-10 items-center">
+          <div className="flex items-center gap-10 text-xl md:text-5xl">
             <FaFacebookSquare />
             <FaXTwitter />
             <FaDribbble />
@@ -32,8 +33,42 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex text-center items-center justify-center py-4">
+      <div className="flex items-center justify-center bg-slate-950 py-4 text-center text-gray-400">
         © 2019 All Rights Reserved. Terms of use and Privacy Policy
+      </div>
+
+      <div className="absolute -top-48 left-0 flex w-full items-center justify-center md:-top-24">
+        <div className="mx-2 grid h-96 w-full max-w-5xl grid-cols-1 rounded-2xl bg-slate-600 p-4 md:h-48 md:grid-cols-3">
+          <div className="relative flex items-center justify-center text-center">
+            <div className="flex flex-col items-center justify-center gap-3 text-center">
+              <div className="text-2xl text-primary-200">
+                <FaLocationDot />
+              </div>
+              <p className="text-xl font-bold text-gray-200">text</p>
+              <p className="text-gray-300">text</p>
+            </div>
+            <div className="absolute right-0 top-0 hidden h-full w-0.5 bg-gray-300 md:block"></div>
+          </div>
+          <div className="relative flex items-center justify-center text-center">
+            <div className="flex flex-col items-center justify-center gap-3 text-center">
+              <div className="text-2xl text-primary-200">
+                <MdCall />
+              </div>
+              <p className="text-xl font-bold text-gray-200">text</p>
+              <p className="text-gray-300">text</p>
+            </div>
+            <div className="absolute right-0 top-0 hidden h-full w-0.5 bg-gray-300 md:block"></div>
+          </div>
+          <div className="flex items-center justify-center text-center">
+            <div className="flex flex-col items-center justify-center gap-3 text-center">
+              <div className="text-2xl text-primary-200">
+                <MdEmail />
+              </div>
+              <p className="text-xl font-bold text-gray-200">text</p>
+              <p className="text-gray-300">text</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

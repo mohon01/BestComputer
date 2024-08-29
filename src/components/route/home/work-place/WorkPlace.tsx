@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 export default function WorkPlace() {
   return (
@@ -42,7 +42,7 @@ export default function WorkPlace() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
