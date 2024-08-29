@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Gallery() {
   return (
@@ -17,12 +17,32 @@ export default function Gallery() {
         Gallery
       </div>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={6}
+        breakpoints={{
+          340: {
+            slidesPerView: 2,
+            spaceBetween: 4,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 4,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 6,
+          },
+        }}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>

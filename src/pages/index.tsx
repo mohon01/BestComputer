@@ -9,6 +9,7 @@ import Members from "../components/route/home/members/Members";
 import Services from "../components/route/home/services/Services";
 import Student from "../components/route/home/student/Student";
 import WhyUs from "../components/route/home/whyus/WhyUs";
+import WorkPlace from "../components/route/home/work-place/WorkPlace";
 
 const IndexPage = () => {
   return (
@@ -22,6 +23,7 @@ const IndexPage = () => {
       <Insights />
       <Members />
       <Student />
+      <WorkPlace />
       <Footer />
     </main>
   );
