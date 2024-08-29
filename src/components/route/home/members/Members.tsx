@@ -4,7 +4,7 @@ import MembersModel from "./MembersModel";
 
 export default function Members() {
   return (
-    <div className="mx-2 mb-60 flex flex-col items-center justify-center gap-10 text-center md:mx-20">
+    <div className="mx-2 flex flex-col items-center justify-center gap-10 text-center md:mx-20">
       <div className="space-y-3">
         <div className="text-2xl font-bold text-primary-100 md:text-4xl">
           প্রতিষ্ঠানের সদস্যগণ
