@@ -1,20 +1,30 @@
 import React from "react";
-import img from "../../../../images/user.webp";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
-export default function MembersModel() {
+interface props {
+  name: string;
+  title: string;
+  img: string;
+}
+
+export default function MembersModel({ name, title, img }: props) {
   return (
-    <div className="relative flex h-32 w-96 bg-primary-100">
-      <div className="absolute left-1/2 top-6 -translate-x-1/2 transform space-y-4">
-        <img
-          src={img}
-          alt=""
-          className="h-48 w-48 rounded-full border-4 object-cover"
-        />
-        <div>
-          <div className="text-2xl font-bold">Dummy name</div>
-          <div className="text-xl font-bold text-primary-100">Dummy text</div>
-        </div>
-        <div className="mx-auto h-1 w-20 bg-gray-700"></div>
+    <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+      <div className="relative mx-4 mt-4 overflow-hidden rounded-xl bg-white bg-clip-border text-gray-700">
+        <img src={img} alt="profile-picture" />
+      </div>
+      <div className="p-6 text-center">
+        <h4 className="text-blue-gray-900 mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal antialiased">
+          {name}
+        </h4>
+        <p className="from-blue-gray-600 to-blue-gray-400 block bg-gradient-to-tr bg-clip-text font-sans text-base font-medium leading-relaxed antialiased">
+          {title}
+        </p>
+      </div>
+      <div className="flex justify-center gap-7 p-6 pt-2">
+        <FaFacebook />
+        <FaTwitter />
+        <FaInstagram />
       </div>
     </div>
   );

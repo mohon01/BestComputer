@@ -7,6 +7,7 @@ import { Slider } from "../components/route/home/hero/Slider";
 import Insights from "../components/route/home/insights/Insights";
 import Members from "../components/route/home/members/Members";
 import Services from "../components/route/home/services/Services";
+import Student from "../components/route/home/student/Student";
 import WhyUs from "../components/route/home/whyus/WhyUs";
 
 const IndexPage = () => {
@@ -20,6 +21,7 @@ const IndexPage = () => {
       <WhyUs />
       <Insights />
       <Members />
+      <Student />
       <Footer />
     </main>
   );

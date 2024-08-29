@@ -1,4 +1,5 @@
 import React from "react";
+import img from "../../../../images/user.webp";
 import MembersModel from "./MembersModel";
 
 export default function Members() {
@@ -13,10 +14,10 @@ export default function Members() {
           সরাসরি বিভিন্ন কাজের সাথে জড়িত
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-10">
-        <MembersModel />
-        <MembersModel />
-        <MembersModel />
+      <div className="grid gap-10 md:grid-cols-3">
+        <MembersModel name="Dummy Name" title="CEO" img={img} />
+        <MembersModel name="Dummy Name" title="CEO" img={img} />
+        <MembersModel name="Dummy Name" title="CEO" img={img} />
       </div>
     </div>
   );
