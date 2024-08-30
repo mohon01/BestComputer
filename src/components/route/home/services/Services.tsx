@@ -1,26 +1,26 @@
 import React from "react";
 import { BsPersonWorkspace } from "react-icons/bs";
 import { CiGlobe } from "react-icons/ci";
+import { FaHandshake } from "react-icons/fa";
 import { FaDigitalOcean } from "react-icons/fa6";
 import { FiVideo } from "react-icons/fi";
 import { GiAutoRepair } from "react-icons/gi";
 import { GrAnnounce } from "react-icons/gr";
 import { LuNetwork } from "react-icons/lu";
 import { RiComputerLine } from "react-icons/ri";
+import SectionHeader from "../../../animation/SectionHeader";
 import ServicesCard from "./ServicesCard";
 
 export default function Services() {
   return (
     <div className="flex flex-col items-center justify-center gap-10 px-2 py-10 text-center md:px-20">
-      <div className="space-y-3">
-        <p className="text-2xl font-bold text-primary-100 md:text-5xl">
-          আমাদের সেবা সমূহ
-        </p>
-        <p className="text-gray-600">
-          আমাদের প্রতিষ্ঠান থেকে আপনি স্বল্পমূল্যে প্রফেশনাল মানে বিভিন্ন সেবা
-          পাবেন{" "}
-        </p>
-      </div>
+      <SectionHeader
+        title=" আমাদের সেবা সমূহ"
+        text="আমাদের প্রতিষ্ঠান থেকে আপনি স্বল্পমূল্যে প্রফেশনাল মানে বিভিন্ন সেবা
+          পাবেন"
+        icon={FaHandshake}
+      />
+
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-10">
         <ServicesCard
           icon={RiComputerLine}

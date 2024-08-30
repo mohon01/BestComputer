@@ -14,8 +14,7 @@ export const contentData = [
     img: slide2,
     title:
       "কারিগরি শিক্ষা বোর্ড কতৃক পরীক্ষার মাধ্যমে সরকারী সার্টিফিকেট প্রদান করা হয়",
-    description:
-      "Online education leads the world in distance education with high quality online degrees and online courses.",
+    description: "ঝিনাইদহে একমাত্র নির্ভরযোগ্য প্রতিষ্ঠান।",
   },
   {
     img: slide3,
