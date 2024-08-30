@@ -35,7 +35,7 @@ export const Slider: React.FC = () => {
     (newDirection: Direction) => {
       setPage([page + newDirection, newDirection]);
     },
-    [page]
+    [page],
   );
 
   const goToPage = (index: number) => {
@@ -56,14 +56,17 @@ export const Slider: React.FC = () => {
 
   const randomVariantIndex = useMemo(
     () => Math.floor(Math.random() * revealVariants.length),
-    [page]
+    [page],
   );
   const selectedVariant = revealVariants[randomVariantIndex];
 
   const selectedContentVariant = contentVariants[imageIndex];
 
+  const previousImageIndex =
+    imageIndex === 0 ? images.length - 1 : imageIndex - 1;
+
   return (
-    <div className="relative h-[39rem] -z-10 w-full overflow-hidden">
+    <div className="relative h-[39rem] w-full overflow-hidden">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={page}
@@ -96,11 +99,7 @@ export const Slider: React.FC = () => {
             animate={selectedVariant.animate}
             transition={selectedVariant.transition}
             style={{
-              backgroundImage: `url(${
-                imageIndex === images.length - 1
-                  ? images[imageIndex - 1]
-                  : images[(imageIndex - 1 + images.length) % images.length]
-              })`,
+              backgroundImage: `url(${images[previousImageIndex]})`,
               backgroundPosition: "center",
               backgroundRepeat: "repeat",
               zIndex: 1,
@@ -118,7 +117,7 @@ export const Slider: React.FC = () => {
           ></div>
 
           {/* Content Over the Image */}
-          <div className="absolute left-1/2 top-24 md:top-48 z-10 mx-auto grid h-full w-full max-w-6xl -translate-x-1/2 px-2 md:grid-cols-2 justify-center text-white">
+          <div className="absolute left-1/2 top-24 z-10 mx-auto grid h-full w-full max-w-6xl -translate-x-1/2 justify-center px-2 text-white md:top-48 md:grid-cols-2">
             <div
               style={{
                 perspective: 1000,
@@ -138,7 +137,7 @@ export const Slider: React.FC = () => {
                 initial={selectedContentVariant.title.initial}
                 animate={selectedContentVariant.title.animate}
                 transition={selectedContentVariant.title.transition}
-                className="font-loveYa text-2xl md:text-5xl font-bold"
+                className="font-loveYa text-2xl font-bold md:text-5xl"
               >
                 {contentData[imageIndex].title}
               </motion.h1>
@@ -146,7 +145,7 @@ export const Slider: React.FC = () => {
                 initial={selectedContentVariant.description.initial}
                 animate={selectedContentVariant.description.animate}
                 transition={selectedContentVariant.description.transition}
-                className="md:text-lg text-sm"
+                className="text-sm md:text-lg"
               >
                 {contentData[imageIndex].description}
               </motion.p>
@@ -154,7 +153,7 @@ export const Slider: React.FC = () => {
                 initial={selectedContentVariant.button.initial}
                 animate={selectedContentVariant.button.animate}
                 transition={selectedContentVariant.button.transition}
-                className="w-fit rounded bg-slate-100 px-3 md:px-6 py-2 md:py-3 md:text-lg font-bold text-primary-100 shadow-lg"
+                className="w-fit rounded bg-slate-100 px-3 py-2 font-bold text-primary-100 shadow-lg md:px-6 md:py-3 md:text-lg"
               >
                 Start Learning Now
               </motion.button>
