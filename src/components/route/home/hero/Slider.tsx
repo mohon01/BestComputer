@@ -117,7 +117,7 @@ export const Slider: React.FC = () => {
           ></div>
 
           {/* Content Over the Image */}
-          <div className="absolute left-1/2 top-24 z-10 mx-auto grid h-full w-full max-w-6xl -translate-x-1/2 justify-center px-2 text-white md:top-48 md:grid-cols-2">
+          <div className="absolute left-1/2 top-24 z-10 mx-auto grid h-full w-full max-w-6xl -translate-x-1/2 justify-center gap-10 px-2 text-white md:top-48 md:grid-cols-2">
             <div
               style={{
                 perspective: 1000,
@@ -137,7 +137,7 @@ export const Slider: React.FC = () => {
                 initial={selectedContentVariant.title.initial}
                 animate={selectedContentVariant.title.animate}
                 transition={selectedContentVariant.title.transition}
-                className="font-loveYa text-2xl font-bold md:text-5xl"
+                className="text-2xl font-bold md:text-4xl"
               >
                 {contentData[imageIndex].title}
               </motion.h1>

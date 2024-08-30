@@ -1,25 +1,27 @@
-import slide1 from "../../../../images/slide-1-1.webp";
-import slide2 from "../../../../images/slide-2-1.webp";
-import slide3 from "../../../../images/slide-3-1.jpg";
+import slide1 from "../../../../images/hero/1.png";
+import slide2 from "../../../../images/hero/2.jpg";
+import slide3 from "../../../../images/hero/3.jpg";
 
 // Array of content corresponding to each image
 export const contentData = [
   {
     img: slide1,
-    title: "Take great courses from world's best universities",
+    title: "বেস্ট কম্পিউটার ট্রেনিং সেন্টারের পক্ষ থেকে আপনাকে স্বাগতম",
     description:
-      "Our courses are build in partnership with technology leaders and are relevant to industry needs.",
+      "বেস্ট কম্পিউটার ট্রেনিং সেন্টার, রফি টাওয়ার (১০ তলা ভবনের ৪র্থ তলা) পায়রা চত্ত্বর, ঝিনাইদহ",
   },
   {
     img: slide2,
-    title: "Education center and distance education",
+    title:
+      "কারিগরি শিক্ষা বোর্ড কতৃক পরীক্ষার মাধ্যমে সরকারী সার্টিফিকেট প্রদান করা হয়",
     description:
       "Online education leads the world in distance education with high quality online degrees and online courses.",
   },
   {
     img: slide3,
-    title: "Receive personalized coaching",
+    title:
+      "আধুনিক ও সুসজ্জিত মাল্টিমিডিয়া কম্পিইউটার ল্যাব শিখুন পরিপূর্ণভাবে, অভিজ্ঞ প্রশিক্ষকের কাছে",
     description:
-      "Learning is a collaborative process, and we'r here to provide you with guidance every step of the way.",
+      "প্রশিক্ষণ নিন, দক্ষতা অর্জন করুন , সফলতা আসবেই। নিজেকে দক্ষ করে তুলুন, যগের সাথে তাল মিলিয়ে এগিয়ে চলুন",
   },
 ];
