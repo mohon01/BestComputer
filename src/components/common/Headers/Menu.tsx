@@ -31,7 +31,7 @@ export default function Menu() {
   };
 
   return (
-    <div className="md:hidden relative">
+    <div className="relative md:hidden">
       <button
         onClick={toggleMenu}
         aria-expanded={isOpen}
@@ -45,17 +45,17 @@ export default function Menu() {
         {isOpen && (
           <motion.div
             id="menu-items"
-            className="absolute right-6 top-10 w-72 p-5 overflow-hidden space-y-4 bg-primary-100 text-white rounded-lg shadow-lg z-10 origin-top"
+            className="absolute right-6 top-10 z-10 w-72 origin-top space-y-4 overflow-hidden rounded-lg bg-primary-100 p-5 text-white shadow-lg"
             variants={menuVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
           >
-            <p>Homepage</p>
-            <p>Features</p>
-            <p>Courses</p>
-            <p>Teacher</p>
-            <p>Blog</p>
+            <p>হোমপেজ</p>
+            <p>নোটিশ</p>
+            <p>কোর্স সমূহ</p>
+            <p>আবেদন করুন</p>
+            <p>আমাদের সম্পর্কে</p>
           </motion.div>
         )}
       </AnimatePresence>

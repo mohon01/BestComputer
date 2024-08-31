@@ -12,19 +12,18 @@ export default function FeedBackModel() {
         <div className="flex w-full flex-col gap-0.5">
           <div className="flex items-center justify-between">
             <h5 className="text-blue-gray-900 block font-sans text-xl font-semibold leading-snug tracking-normal antialiased">
-              Tania Andrew
+              পুরো নাম
             </h5>
           </div>
           <p className="text-blue-gray-900 block font-sans text-base font-light leading-relaxed antialiased">
-            Frontend Lead @ Google
+            পদবী
           </p>
         </div>
       </div>
       <div className="mb-6 p-0">
         <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-          "I found solution to all my design needs from Creative Tim. I use them
-          as a freelancer in my hobby projects for fun! And its really
-          affordable, very humble guys !!!"
+          অংশ অংশভাক আঁইশ ইঁচড়েপাকা ঈক্ষণ ঈদৃক অংশভাগী জওয়ান অংশাঙ্কিত
+          ইউক্যালিপটাস অংশাবতার হালহদিশ পিতৃতর্পণ টকানো ঈক্ষিত জগজ্জন তকতনামা
         </p>
       </div>
     </div>

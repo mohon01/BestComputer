@@ -154,9 +154,9 @@ export const Slider: React.FC = () => {
                 initial={selectedContentVariant.button.initial}
                 animate={selectedContentVariant.button.animate}
                 transition={selectedContentVariant.button.transition}
-                className="w-fit rounded bg-slate-100 px-3 py-2 font-bold text-primary-100 shadow-lg md:px-6 md:py-3 md:text-lg"
+                className="w-fit rounded bg-slate-100 px-3 py-2 font-bold text-black shadow-lg md:px-6 md:py-3 md:text-lg"
               >
-                Start Learning Now
+                শেখা শুরু করুন
               </motion.button>
             </div>
           </div>

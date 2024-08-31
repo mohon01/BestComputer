@@ -12,6 +12,7 @@ import {
   FaRegUser,
 } from "react-icons/fa";
 import { FiClock, FiDollarSign } from "react-icons/fi";
+import { GiShipWheel } from "react-icons/gi";
 import { GoVerified } from "react-icons/go";
 import { GrDocument } from "react-icons/gr";
 import { IoCloudyNightOutline } from "react-icons/io5";
@@ -19,20 +20,19 @@ import { LuGraduationCap } from "react-icons/lu";
 import { RiComputerLine } from "react-icons/ri";
 import "swiper/css";
 import "swiper/css/pagination";
+import SectionHeader from "../../../animation/SectionHeader";
 import WhyUsModel from "./WhyUsModel";
 
 export default function WhyUs() {
   return (
     <div className="my-10 space-y-10 px-2 md:px-20">
-      <div className="flex flex-col items-center justify-center gap-4 text-center">
-        <p className="text-2xl font-bold text-primary-100 md:text-5xl">
-          আমাদের প্রতিষ্ঠানে কেন
-        </p>
-        <p className="text-gray-600">
-          অন্য প্রতিষ্ঠান থেকে আমরা কেন আলাদা? আমাদের প্রতিষ্ঠানকে কেন বেছে
-          নিবেন?
-        </p>
-      </div>
+      <SectionHeader
+        title="আমাদের প্রতিষ্ঠানে কেন"
+        text="অন্য প্রতিষ্ঠান থেকে আমরা কেন আলাদা? আমাদের প্রতিষ্ঠানকে কেন বেছে
+          নিবেন?"
+        icon={GiShipWheel}
+      />
+
       <Swiper
         loop={true}
         slidesPerView={1}

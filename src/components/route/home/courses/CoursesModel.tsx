@@ -79,11 +79,11 @@ export default function CoursesModel({ img, color, title }: props) {
             </div>
           </div>
           <div className="flex gap-5">
-            <button className="rounded border bg-white px-4 py-2 font-bold text-orange-600 shadow-lg transition-all duration-300 hover:bg-primary-300 hover:text-white">
-              Learn More
+            <button className="rounded border bg-white p-2 text-sm font-bold text-orange-600 shadow-lg transition-all duration-300 hover:bg-primary-300 hover:text-white">
+              আরও জানুন
             </button>
-            <button className="rounded border bg-white px-4 py-2 font-bold text-orange-600 shadow-lg transition-all duration-300 hover:bg-primary-300 hover:text-white">
-              Buy Now
+            <button className="rounded border bg-white p-2 text-sm font-bold text-orange-600 shadow-lg transition-all duration-300 hover:bg-primary-300 hover:text-white">
+              এখন কিনুন
             </button>
           </div>
         </div>

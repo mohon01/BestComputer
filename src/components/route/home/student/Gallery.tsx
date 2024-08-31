@@ -14,7 +14,7 @@ export default function Gallery() {
   return (
     <div className="space-y-4">
       <div className="text-center text-3xl font-bold text-primary-100">
-        Gallery
+        গ্যালারি
       </div>
       <Swiper
         breakpoints={{

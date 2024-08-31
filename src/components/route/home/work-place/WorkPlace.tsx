@@ -8,14 +8,18 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
+import { FaHandHoldingDollar } from "react-icons/fa6";
 import { Autoplay } from "swiper/modules";
+import SectionHeader from "../../../animation/SectionHeader";
 
 export default function WorkPlace() {
   return (
     <div className="mx-2 space-y-4 md:mx-20">
-      <div className="text-center text-3xl font-bold text-primary-100">
-        WorkPlace
-      </div>
+      <SectionHeader
+        title="ছাত্রদের কর্মক্ষেত্র"
+        text="আপনি যদি সম্পূর্ণরূপে কাজ শিখে নিজেকে দক্ষ ভাবে তৈরি করতে পারেন তাহলে অবশ্যই বিভিন্ন মার্কেটপ্লেস এ কাজ করতে পারবেন।"
+        icon={FaHandHoldingDollar}
+      />
       <Swiper
         breakpoints={{
           340: {

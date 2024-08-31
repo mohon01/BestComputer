@@ -13,15 +13,17 @@ export default function Footer() {
     <div className="relative mt-80 md:mt-40">
       <div className="bg-gray-800 px-2 pt-48 md:pt-20">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-8 py-10 text-white">
-          <p className="font-loveYa text-4xl font-bold">Education Center</p>
+          <p className="text-center text-2xl font-bold md:text-4xl">
+            বেস্ট কম্পিউটার ট্রেনিং সেন্টার
+          </p>
           <div className="grid grid-cols-2 gap-8">
             <div className="flex flex-col items-end text-end text-sm md:text-lg">
-              <p>San Francisco, CA 04534 US</p>
-              <p>2334 San st</p>
+              <p>ঠিকানা</p>
+              <p>ঠিকানা</p>
             </div>
             <div>
-              <p>Phone: 239479348</p>
-              <p>Fax: 3455543</p>
+              <p>মোবাইল 239479348</p>
+              <p>মোবাইল 239479348</p>
             </div>
           </div>
           <div className="flex items-center gap-10 text-xl md:text-5xl">
@@ -34,7 +36,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex items-center justify-center bg-slate-950 py-4 text-center text-gray-400">
-        © 2019 All Rights Reserved. Terms of use and Privacy Policy
+        কপিরাইট © ২০২০  সর্বসত্ত্ব সংরক্ষিত
       </div>
 
       <div className="absolute -top-48 left-0 flex w-full items-center justify-center md:-top-24">
@@ -44,8 +46,8 @@ export default function Footer() {
               <div className="text-2xl text-primary-200">
                 <FaLocationDot />
               </div>
-              <p className="text-xl font-bold text-gray-200">text</p>
-              <p className="text-gray-300">text</p>
+              <p className="text-xl font-bold text-gray-200">ঠিকানা</p>
+              <p className="text-gray-300">ঠিকানা</p>
             </div>
             <div className="absolute right-0 top-0 hidden h-full w-0.5 bg-gray-300 md:block"></div>
           </div>
@@ -54,8 +56,8 @@ export default function Footer() {
               <div className="text-2xl text-primary-200">
                 <MdCall />
               </div>
-              <p className="text-xl font-bold text-gray-200">text</p>
-              <p className="text-gray-300">text</p>
+              <p className="text-xl font-bold text-gray-200">মোবাইল</p>
+              <p className="text-gray-300">মোবাইল</p>
             </div>
             <div className="absolute right-0 top-0 hidden h-full w-0.5 bg-gray-300 md:block"></div>
           </div>
@@ -64,8 +66,8 @@ export default function Footer() {
               <div className="text-2xl text-primary-200">
                 <MdEmail />
               </div>
-              <p className="text-xl font-bold text-gray-200">text</p>
-              <p className="text-gray-300">text</p>
+              <p className="text-xl font-bold text-gray-200">ই-মেইল</p>
+              <p className="text-gray-300">ই-মেইল</p>
             </div>
           </div>
         </div>

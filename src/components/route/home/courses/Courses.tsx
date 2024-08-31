@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import img2 from "../../../../images/course/Databasae-programing.jpg";
 import img3 from "../../../../images/course/Digital-marketing.jpg";
 import img8 from "../../../../images/course/Ethical-hacking1.jpg";
@@ -75,14 +74,6 @@ export default function Courses() {
           <CoursesModel img={img8} color="green" title="ইথিক্যাল হ্যাকিং" />
         </motion.div>
       </motion.div>
-      <div className="flex items-center justify-center pt-6">
-        <button className="flex items-center gap-2 rounded-md bg-primary-100 px-6 py-2 font-bold uppercase text-white">
-          <span>
-            <LuGraduationCap />
-          </span>
-          <span>View all courses</span>
-        </button>
-      </div>
     </div>
   );
 }

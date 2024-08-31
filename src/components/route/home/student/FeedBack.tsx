@@ -14,7 +14,7 @@ export default function FeedBack() {
   return (
     <div className="space-y-6">
       <div className="text-center text-3xl font-bold text-primary-100">
-        FeedBack
+        ছাত্র প্রতিক্রিয়া
       </div>
       <Swiper
         scrollbar={{

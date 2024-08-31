@@ -64,7 +64,7 @@ export default function SectionHeader({
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ amount: 0.8, once: false }}
-      className="mx-3 flex flex-col items-center justify-center gap-3 text-center"
+      className="mx-3 flex flex-col items-center justify-center gap-2 text-center"
     >
       <motion.div
         variants={lineLeft}

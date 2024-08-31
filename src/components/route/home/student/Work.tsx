@@ -14,7 +14,7 @@ export default function Work() {
   return (
     <div className="space-y-4">
       <div className="text-center text-3xl font-bold text-primary-100">
-        Work
+        ছাত্রদের কাজ
       </div>
       <Swiper
         breakpoints={{
