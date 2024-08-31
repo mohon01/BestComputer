@@ -1,6 +1,6 @@
 import React from "react";
 // Import Swiper React components
-import { FreeMode, Pagination } from "swiper/modules";
+import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -50,8 +50,11 @@ export default function WhyUs() {
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination, FreeMode]}
-        className="mySwiper"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Pagination, FreeMode, Autoplay]}
       >
         <SwiperSlide>
           <WhyUsModel
