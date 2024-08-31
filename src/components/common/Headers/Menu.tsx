@@ -56,6 +56,7 @@ export default function Menu() {
             <p>কোর্স সমূহ</p>
             <p>আবেদন করুন</p>
             <p>আমাদের সম্পর্কে</p>
+            <p>যোগাযোগ</p>
           </motion.div>
         )}
       </AnimatePresence>

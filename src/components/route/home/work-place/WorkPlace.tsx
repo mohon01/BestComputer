@@ -1,7 +1,11 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import img1 from "../../../../images/workplace.png";
+import img2 from "../../../../images/workplace/fff.png";
+import img1 from "../../../../images/workplace/fiverr.png";
+import img3 from "../../../../images/workplace/toptal.png";
+import img4 from "../../../../images/workplace/upwork.png";
+import img5 from "../../../../images/workplace/youtube.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,7 +28,7 @@ export default function WorkPlace() {
         breakpoints={{
           340: {
             slidesPerView: 3,
-            spaceBetween: 10,
+            spaceBetween: 20,
           },
           640: {
             slidesPerView: 4,
@@ -35,7 +39,7 @@ export default function WorkPlace() {
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 6,
+            slidesPerView: 5,
             spaceBetween: 40,
           },
         }}
@@ -47,31 +51,42 @@ export default function WorkPlace() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper"
+        className="my-auto flex items-center justify-center"
       >
-        <SwiperSlide>
-          <img src={img1} alt="" />
+        <SwiperSlide className="flex h-full items-center justify-center">
+          <img
+            src={img1}
+            alt=""
+            className="flex h-20 w-full items-center justify-center object-scale-down"
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img1} alt="" />
+        <SwiperSlide className="flex h-full items-center justify-center">
+          <img
+            src={img2}
+            alt=""
+            className="flex h-20 w-full items-center justify-center object-scale-down"
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img1} alt="" />
+        <SwiperSlide className="flex h-full items-center justify-center">
+          <img
+            src={img3}
+            alt=""
+            className="flex h-20 w-full items-center justify-center object-scale-down"
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img1} alt="" />
+        <SwiperSlide className="flex h-full items-center justify-center">
+          <img
+            src={img4}
+            alt=""
+            className="flex h-20 w-full items-center justify-center object-scale-down"
+          />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img1} alt="" />
+        <SwiperSlide className="flex h-full items-center justify-center">
+          <img
+            src={img5}
+            alt=""
+            className="flex h-20 w-full items-center justify-center object-scale-down"
+          />
         </SwiperSlide>
       </Swiper>
     </div>

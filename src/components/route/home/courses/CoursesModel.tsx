@@ -73,10 +73,10 @@ export default function CoursesModel({ img, color, title }: props) {
         <div className="flex h-full flex-col items-center justify-between px-6 py-10">
           <div className="space-y-4 text-white">
             <div className="text-2xl">{title}</div>
-            <div className="text-thin text-sm">
+            {/* <div className="text-thin text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
               deleniti?
-            </div>
+            </div> */}
           </div>
           <div className="flex gap-5">
             <button className="rounded border bg-white p-2 text-sm font-bold text-orange-600 shadow-lg transition-all duration-300 hover:bg-primary-300 hover:text-white">

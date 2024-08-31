@@ -18,6 +18,7 @@ const Navigation: React.FC = () => {
     { id: 3, label: "কোর্স সমূহ", path: "/gallery" },
     { id: 4, label: "আবেদন করুন", path: "/about" },
     { id: 5, label: "আমাদের সম্পর্কে", path: "/contact" },
+    { id: 5, label: "যোগাযোগ", path: "/contact" },
   ];
 
   const getBackgroundStyles = () => {

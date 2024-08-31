@@ -16,16 +16,7 @@ export default function Footer() {
           <p className="text-center text-2xl font-bold md:text-4xl">
             বেস্ট কম্পিউটার ট্রেনিং সেন্টার
           </p>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="flex flex-col items-end text-end text-sm md:text-lg">
-              <p>ঠিকানা</p>
-              <p>ঠিকানা</p>
-            </div>
-            <div>
-              <p>মোবাইল 239479348</p>
-              <p>মোবাইল 239479348</p>
-            </div>
-          </div>
+
           <div className="flex items-center gap-10 text-xl md:text-5xl">
             <FaFacebookSquare />
             <FaXTwitter />
@@ -47,7 +38,9 @@ export default function Footer() {
                 <FaLocationDot />
               </div>
               <p className="text-xl font-bold text-gray-200">ঠিকানা</p>
-              <p className="text-gray-300">ঠিকানা</p>
+              <p className="text-gray-300">
+                রফি টাওয়ার (১০ তলা ভবনের ৪র্থ তলা) পায়রা চত্ত্বর, ঝিনাইদহ
+              </p>
             </div>
             <div className="absolute right-0 top-0 hidden h-full w-0.5 bg-gray-300 md:block"></div>
           </div>
@@ -57,7 +50,10 @@ export default function Footer() {
                 <MdCall />
               </div>
               <p className="text-xl font-bold text-gray-200">মোবাইল</p>
-              <p className="text-gray-300">মোবাইল</p>
+              <div>
+                <p className="text-gray-300">01989491248</p>
+                <p className="text-gray-300">01799-574570</p>
+              </div>
             </div>
             <div className="absolute right-0 top-0 hidden h-full w-0.5 bg-gray-300 md:block"></div>
           </div>
@@ -67,7 +63,12 @@ export default function Footer() {
                 <MdEmail />
               </div>
               <p className="text-xl font-bold text-gray-200">ই-মেইল</p>
-              <p className="text-gray-300">ই-মেইল</p>
+              <div>
+                <p className="text-gray-300">
+                  bestcomputer.jhenaidah@gmail.com
+                </p>
+                <p className="text-gray-300">freelancermohon01@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>

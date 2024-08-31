@@ -1,6 +1,8 @@
 import React from "react";
 import { FaUsers } from "react-icons/fa";
-import img from "../../../../images/user.webp";
+import img2 from "../../../../images/member/mahbub.jpg";
+import img1 from "../../../../images/member/mohon.jpg";
+import img from "../../../../images/member/shohidur.jpg";
 import SectionHeader from "../../../animation/SectionHeader";
 import MembersModel from "./MembersModel";
 
@@ -15,24 +17,9 @@ export default function Members() {
       />
 
       <div className="grid gap-10 md:grid-cols-3">
-        <MembersModel
-          name="পুরো নাম
-"
-          title="পদবী"
-          img={img}
-        />
-        <MembersModel
-          name="পুরো নাম
-"
-          title="পদবী"
-          img={img}
-        />
-        <MembersModel
-          name="পুরো নাম
-"
-          title="পদবী"
-          img={img}
-        />
+        <MembersModel name="মোঃ শাহিদুর রহমান" title="পরিচালক" img={img} />
+        <MembersModel name="মোঃ মোহন" title="সিনিয়র ইন্সট্রাক্টর" img={img1} />
+        <MembersModel name="মোঃ মাহবুব" title="অফিস সহকারি" img={img2} />
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ export default function StickyHeader() {
 
   return (
     <div
-      className={`fixed border-dashed border-b-2 px-2 py-2 z-50 left-1/2 duration-300 transition-all  top-50 w-full  -translate-x-1/2 transform space-y-4  ${
+      className={`top-50 fixed z-50 w-full transform space-y-4 border-b-2 border-dashed px-2 py-2 transition-all duration-300 ${
         visible ? "translate-y-0" : "-translate-y-24"
       }`}
       style={{
@@ -35,12 +35,12 @@ export default function StickyHeader() {
         backgroundRepeat: "repeat",
       }}
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="mx-auto px-2 md:px-20">
         <div className="flex items-center justify-between">
-          <div className="font-loveYa text-lg md:text-3xl font-bold text-white">
+          <div className="font-loveYa text-lg font-bold text-white md:text-3xl">
             বেস্ট কম্পিউটার ট্রেনিং সেন্টার
           </div>
-          <div className="md:flex hidden items-center gap-2">
+          <div className="hidden items-center gap-2 md:flex">
             <Navigation />
             <FiSearch color="white" size={28} />
           </div>

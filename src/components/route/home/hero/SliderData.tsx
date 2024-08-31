@@ -1,6 +1,6 @@
 import slide1 from "../../../../images/hero/1.png";
-import slide3 from "../../../../images/hero/4.jpg";
-import slide2 from "../../../../images/hero/6.jpg";
+import slide2 from "../../../../images/hero/2.jpg";
+import slide3 from "../../../../images/hero/3.jpg";
 
 // Array of content corresponding to each image
 export const contentData = [

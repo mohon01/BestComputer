@@ -1,7 +1,12 @@
 import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import img1 from "../../../../images/thumb.jpg";
+import img1 from "../../../../images/gallery/1.jpg";
+import img2 from "../../../../images/gallery/2.jpg";
+import img3 from "../../../../images/gallery/3.jpg";
+import img4 from "../../../../images/gallery/4.jpg";
+import img5 from "../../../../images/gallery/5.jpg";
+import img6 from "../../../../images/gallery/6.jpg";
 
 // Import Swiper styles
 import "swiper/css";
@@ -49,19 +54,19 @@ export default function Gallery() {
           <img src={img1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img1} alt="" />
+          <img src={img2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img1} alt="" />
+          <img src={img3} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img1} alt="" />
+          <img src={img4} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img1} alt="" />
+          <img src={img5} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img1} alt="" />
+          <img src={img6} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>
