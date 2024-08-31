@@ -14,7 +14,7 @@ import WorkPlace from "../components/route/home/work-place/WorkPlace";
 
 const IndexPage = () => {
   return (
-    <main>
+    <main className="overflow-x-hidden">
       <StickyHeader />
       <Header />
       <Slider />

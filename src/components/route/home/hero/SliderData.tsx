@@ -1,6 +1,6 @@
 import slide1 from "../../../../images/hero/1.png";
-import slide2 from "../../../../images/hero/2.jpg";
-import slide3 from "../../../../images/hero/3.jpg";
+import slide3 from "../../../../images/hero/4.jpg";
+import slide2 from "../../../../images/hero/6.jpg";
 
 // Array of content corresponding to each image
 export const contentData = [
@@ -18,8 +18,7 @@ export const contentData = [
   },
   {
     img: slide3,
-    title:
-      "আধুনিক ও সুসজ্জিত মাল্টিমিডিয়া কম্পিইউটার ল্যাব শিখুন পরিপূর্ণভাবে, অভিজ্ঞ প্রশিক্ষকের কাছে",
+    title: "আধুনিক ও সুসজ্জিত মাল্টিমিডিয়া কম্পিইউটার ল্যাব",
     description:
       "প্রশিক্ষণ নিন, দক্ষতা অর্জন করুন , সফলতা আসবেই। নিজেকে দক্ষ করে তুলুন, যগের সাথে তাল মিলিয়ে এগিয়ে চলুন",
   },
