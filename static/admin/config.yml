@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update
+  branch: master # Branch to update
 
 media_folder: static/img # Folder for uploaded files
 public_folder: /img
