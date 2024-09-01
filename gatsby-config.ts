@@ -62,7 +62,7 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./src/content/notice`,
+        path: `./content/blog`,
         name: `blog`,
       },
     },

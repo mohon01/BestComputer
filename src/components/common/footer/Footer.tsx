@@ -5,7 +5,7 @@ import {
   FaPinterestSquare,
   FaRss,
 } from "react-icons/fa";
-import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
+import { FaLocationDot } from "react-icons/fa6";
 import { MdCall, MdEmail } from "react-icons/md";
 
 export default function Footer() {
@@ -19,7 +19,6 @@ export default function Footer() {
 
           <div className="flex items-center gap-10 text-xl md:text-5xl">
             <FaFacebookSquare />
-            <FaXTwitter />
             <FaDribbble />
             <FaPinterestSquare />
             <FaRss />
