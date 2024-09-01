@@ -65,7 +65,6 @@ const config: GatsbyConfig = {
             },
           },
           `gatsby-remark-prismjs`,
-          "gatsby-plugin-static-cms",
         ],
       },
     },
