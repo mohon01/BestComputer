@@ -68,6 +68,12 @@ const config: GatsbyConfig = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-decap-cms",
+      // options: {
+      //   modulePath: `${__dirname}/src/cms/cms.js`, // Optional, customize the path if needed
+      // },
+    },
   ],
 };
 
