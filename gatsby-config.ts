@@ -5,9 +5,7 @@ const config: GatsbyConfig = {
     title: `BestComputer`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
-  // If you use VSCode you can also use the GraphQL plugin
-  // Learn more at: https://gatsby.dev/graphql-typegen
+
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
@@ -16,18 +14,14 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "GA-TRACKING_ID", // Google Analytics / GA
-          // "AW-CONVERSION_ID", // Google Ads / Adwords / AW
-          // "DC-FLOODLIGHT_ID", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
-        ],
-        // This object is optional and can be used for additional plugin configuration
+        trackingIds: ["GA-TRACKING_ID"],
+
         gtagConfig: {
           optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
           cookie_expires: 0,
         },
-        // This object is also optional, used for adding script tag attributes:
+
         pluginConfig: {
           head: true,
           respectDNT: true,
@@ -59,13 +53,7 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `./content/blog`,
-        name: `blog`,
-      },
-    },
+
     {
       resolve: `gatsby-transformer-remark`,
       options: {
