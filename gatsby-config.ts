@@ -52,22 +52,6 @@ const config: GatsbyConfig = {
     },
 
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "notice",
-        path: "./content/notice/",
-      },
-      __key: "notice",
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "upload",
-        path: "./images/uploads/",
-      },
-      __key: "uploads",
-    },
-    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
