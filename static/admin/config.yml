@@ -3,7 +3,7 @@ backend:
   branch: master
 
 media_folder: "images/uploads"
-public_folder: "../../static/images"
+public_folder: "/images/uploads" # Adjust the path to be relative to the static folder
 
 collections:
   - name: "blog"
@@ -19,3 +19,13 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "notices"
+    label: "Notices"
+    folder: "content/notices"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "PDF File", name: "pdf", widget: "file" } # PDF upload field

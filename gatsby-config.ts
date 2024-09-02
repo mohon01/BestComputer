@@ -15,13 +15,11 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: ["GA-TRACKING_ID"],
-
         gtagConfig: {
           optimize_id: "OPT_CONTAINER_ID",
           anonymize_ip: true,
           cookie_expires: 0,
         },
-
         pluginConfig: {
           head: true,
           respectDNT: true,
@@ -53,7 +51,15 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
-
+    // Adding the configuration to source markdown files
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: "./content/blog/", // Adjust the path if needed
+      },
+      __key: "blog",
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
