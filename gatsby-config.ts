@@ -5,7 +5,6 @@ const config: GatsbyConfig = {
     title: `BestComputer`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-
   graphqlTypegen: true,
   plugins: [
     "gatsby-plugin-postcss",
@@ -51,14 +50,22 @@ const config: GatsbyConfig = {
       },
       __key: "pages",
     },
-    // Adding the configuration to source markdown files
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "blog",
-        path: "./content/blog/", // Adjust the path if needed
+        name: "notice",
+        path: "./content/notice/",
       },
-      __key: "blog",
+      __key: "notice",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "upload",
+        path: "./images/uploads/",
+      },
+      __key: "uploads",
     },
     {
       resolve: `gatsby-transformer-remark`,
