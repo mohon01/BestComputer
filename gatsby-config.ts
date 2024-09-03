@@ -34,6 +34,21 @@ const config: GatsbyConfig = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `notice`,
+        path: `${__dirname}/content/notice`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/images/uploads`,
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {

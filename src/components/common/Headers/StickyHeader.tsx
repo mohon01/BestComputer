@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React, { useEffect, useState } from "react";
 import { FiSearch } from "react-icons/fi";
 import img from "../../../images/green.jpg";
@@ -37,9 +38,12 @@ export default function StickyHeader() {
     >
       <div className="mx-auto px-2 md:px-20">
         <div className="flex items-center justify-between">
-          <div className="font-loveYa text-lg font-bold text-white md:text-3xl">
+          <Link
+            to="/"
+            className="font-loveYa text-lg font-bold text-white md:text-3xl"
+          >
             বেস্ট কম্পিউটার ট্রেনিং সেন্টার
-          </div>
+          </Link>
           <div className="hidden items-center gap-2 md:flex">
             <Navigation />
             <FiSearch color="white" size={28} />
