@@ -2,8 +2,10 @@ import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `BestComputer`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `বেস্ট কম্পিউটার ট্রেনিং সেন্টার`,
+    siteUrl: `https://bestcomputer.netlify.app`,
+    description: `বেস্ট কম্পিউটার ট্রেনিং সেন্টার, রফি টাওয়ার (১০ তলা ভবনের ৪র্থ তলা) পায়রা চত্ত্বর, ঝিনাইদহ`,
+    image: `/images/og-image.jpg`,
   },
   graphqlTypegen: true,
   plugins: [
