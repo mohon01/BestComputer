@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "gatsby";
 import React, { useState } from "react";
 import { MdMenu } from "react-icons/md";
 
@@ -45,18 +46,18 @@ export default function Menu() {
         {isOpen && (
           <motion.div
             id="menu-items"
-            className="absolute right-6 top-10 z-10 w-72 origin-top space-y-4 overflow-hidden rounded-lg bg-primary-100 p-5 text-white shadow-lg"
+            className="absolute right-6 top-10 z-10 flex w-72 origin-top flex-col space-y-4 overflow-hidden rounded-lg bg-primary-100 px-10 py-5 text-white shadow-lg"
             variants={menuVariants}
             initial="hidden"
             animate="visible"
             exit="exit"
           >
-            <p>হোমপেজ</p>
-            <p>নোটিশ</p>
-            <p>কোর্স সমূহ</p>
-            <p>আবেদন করুন</p>
-            <p>আমাদের সম্পর্কে</p>
-            <p>যোগাযোগ</p>
+            <Link to="/">হোমপেজ</Link>
+            <Link to="/notice">নোটিশ</Link>
+            <Link to="/course">কোর্স সমূহ</Link>
+            <Link to="/application">আবেদন করুন</Link>
+            <Link to="/about">আমাদের সম্পর্কে</Link>
+            <Link to="/contact">যোগাযোগ</Link>
           </motion.div>
         )}
       </AnimatePresence>

@@ -20,9 +20,9 @@ const Navigation = () => {
   const navItems: NavItem[] = [
     { id: 1, label: "হোমপেজ", path: "/" },
     { id: 2, label: "নোটিশ", path: "/notice" },
-    { id: 3, label: "কোর্স সমূহ", path: "/gallery" },
-    { id: 4, label: "আবেদন করুন", path: "/about" },
-    { id: 5, label: "আমাদের সম্পর্কে", path: "/contact" },
+    { id: 3, label: "কোর্স সমূহ", path: "/course" },
+    { id: 4, label: "আবেদন করুন", path: "/application" },
+    { id: 5, label: "আমাদের সম্পর্কে", path: "/about" },
     { id: 6, label: "যোগাযোগ", path: "/contact" },
   ];
 
@@ -57,14 +57,14 @@ const Navigation = () => {
         {navItems.map((item, index) => (
           <li
             key={item.id}
-            className={`relative z-10 cursor-pointer whitespace-nowrap px-4 py-2 font-medium uppercase tracking-tighter text-white transition-colors duration-300 ease-in-out ${
+            className={`relative z-10 cursor-pointer whitespace-nowrap py-2 font-medium uppercase tracking-tighter text-white transition-colors duration-300 ease-in-out ${
               normalizePath(location.pathname) === normalizePath(item.path)
                 ? "rounded bg-primary-100"
                 : ""
             }`}
             onMouseEnter={() => setHoveredIndex(index)}
           >
-            <Link to={item.path} className="block h-full w-full">
+            <Link to={item.path} className="p-4 py-2">
               {item.label}
             </Link>
           </li>

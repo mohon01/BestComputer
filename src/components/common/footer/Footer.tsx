@@ -29,14 +29,14 @@ export default function Footer() {
         কপিরাইট © ২০২০  সর্বসত্ত্ব সংরক্ষিত
       </div>
 
-      <div className="absolute -top-48 left-0 flex w-full items-center justify-center md:-top-24">
-        <div className="mx-2 grid h-96 w-full max-w-5xl grid-cols-1 rounded-2xl bg-slate-600 p-4 md:h-48 md:grid-cols-3">
+      <div className="absolute -top-52 left-0 flex w-full items-center justify-center md:-top-24">
+        <div className="mx-2 grid h-[26rem] w-full max-w-5xl grid-cols-1 gap-2 rounded-2xl bg-slate-600 p-4 md:h-48 md:grid-cols-3">
           <div className="relative flex items-center justify-center text-center">
             <div className="flex flex-col items-center justify-center gap-3 text-center">
               <div className="text-2xl text-primary-200">
                 <FaLocationDot />
               </div>
-              <p className="text-xl font-bold text-gray-200">ঠিকানা</p>
+              <p className="font-bold text-gray-200 md:text-xl">ঠিকানা</p>
               <p className="text-gray-300">
                 রফি টাওয়ার (১০ তলা ভবনের ৪র্থ তলা) পায়রা চত্ত্বর, ঝিনাইদহ
               </p>
@@ -48,7 +48,7 @@ export default function Footer() {
               <div className="text-2xl text-primary-200">
                 <MdCall />
               </div>
-              <p className="text-xl font-bold text-gray-200">মোবাইল</p>
+              <p className="font-bold text-gray-200 md:text-xl">মোবাইল</p>
               <div>
                 <p className="text-gray-300">01989491248</p>
                 <p className="text-gray-300">01799-574570</p>
@@ -61,7 +61,7 @@ export default function Footer() {
               <div className="text-2xl text-primary-200">
                 <MdEmail />
               </div>
-              <p className="text-xl font-bold text-gray-200">ই-মেইল</p>
+              <p className="font-bold text-gray-200 md:text-xl">ই-মেইল</p>
               <div>
                 <p className="text-gray-300">
                   bestcomputer.jhenaidah@gmail.com
